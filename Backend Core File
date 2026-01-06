@@ -1,0 +1,33 @@
+def calculate_eligibility_score(user, scheme):
+    """
+    Calculate eligibility score (0–100) based on explainable rules.
+    """
+
+    score = 0
+    explanation = []
+
+    # Income check (30)
+    if scheme["min_income"] <= user["income"] <= scheme["max_income"]:
+        score += 30
+        explanation.append("Income criteria satisfied (+30)")
+
+    # State match (25)
+    if scheme["state"] == "ALL" or scheme["state"] == user["state"]:
+        score += 25
+        explanation.append("State eligibility matched (+25)")
+
+    # Category match (20)
+    if scheme["category"] == user["category"]:
+        score += 20
+        explanation.append("Category eligibility matched (+20)")
+
+    # Age check (15)
+    if scheme["min_age"] <= user["age"] <= scheme["max_age"]:
+        score += 15
+        explanation.append("Age criteria satisfied (+15)")
+
+    # Deadline urgency (10)
+    score += 10
+    explanation.append("Scheme deadline active (+10)")
+
+    return score, explanation
