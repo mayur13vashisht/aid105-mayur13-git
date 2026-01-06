@@ -1,0 +1,5 @@
+scheme_id,scheme_name,state,category,min_income,max_income,min_age,max_age,deadline
+SCH001,PM Awas Yojana,ALL,General,0,300000,18,60,2026-03-31
+SCH002,Ujjwala Yojana,ALL,SC/ST,0,250000,18,65,2026-01-15
+SCH003,Maharashtra Farmer Scheme,Maharashtra,OBC,0,400000,21,60,2026-02-10
+SCH004,Senior Citizen Pension,ALL,General,0,200000,60,100,2026-04-30
