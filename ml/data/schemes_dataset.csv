@@ -1,0 +1,4 @@
+scheme_name,min_income,max_income,min_age,max_age,state,category
+PM Awas Yojana,0,300000,18,60,ALL,General
+Ujjwala Yojana,0,250000,18,65,ALL,SC/ST
+Farmer Aid Scheme,0,400000,21,60,Maharashtra,OBC
